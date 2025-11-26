@@ -1,0 +1,8 @@
+# $Id: local.rules,v 1.11 2004/07/23 20:15:44 bmc Exp $
+# ----------------
+# LOCAL RULES
+# ----------------
+# This file intentionally does not come with signatures.  Put your local
+# additions here.
+alert icmp any any -> any any (msg:"ALERTA: Ping detectado — Regla de estudiante"; sid:1000001; rev:1;)
+alert tcp any any -> any 443 (msg:"ALERTA HTTPs — Tráfico detectado en puerto 443"; sid:1000002; rev:1;)
